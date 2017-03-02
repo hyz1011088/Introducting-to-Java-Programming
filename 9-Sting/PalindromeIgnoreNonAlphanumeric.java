@@ -25,6 +25,7 @@ public class PalindromeIgnoreNonAlphanumeric {
 	
 	public static String reverse(String s){
 		StringBuilder stringBuilder=new StringBuilder();
+		stringBuilder.append(s);  //注意一点要有这个赋值，否则下个语句会返回空值
 		stringBuilder.reverse();
 		return stringBuilder.toString();
 	}
