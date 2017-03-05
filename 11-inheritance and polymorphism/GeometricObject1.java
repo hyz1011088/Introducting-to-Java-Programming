@@ -4,6 +4,10 @@ public class GeometricObject1 {
 	private boolean filled;
 	private java.util.Date dataCreated;
 	
+	public GeometricObject1(){           //空构造函数非常重要，一定要有，不然会报错：Implicit super constructor xx() is undefined for default constructor. Must define an explicit constructor  
+		
+	}
+	
 	public GeometricObject1(String color,boolean filled){
 		dataCreated=new java.util.Date();
 		this.color=color;
