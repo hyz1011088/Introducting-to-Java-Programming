@@ -11,3 +11,6 @@ public class PolymorphismDemo {
 	}
 
 }
+
+
+//circle4类和rectang1均为GometricObject1类的子类，所以在displayobject调用的时候，即进行了对象geometricobject1的多态处理
