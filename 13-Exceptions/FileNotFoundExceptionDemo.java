@@ -8,7 +8,7 @@ public class FileNotFoundExceptionDemo {
 		String filename=inputFromConsole.nextLine();
 		
 		try{
-			Scanner inputFromFile=new Scanner(new File(filename));
+			Scanner inputFromFile=new Scanner(new File(filename));   //在这个地方如果没有输入的文件名会默认抛出异常，不执行下句直接进入catch
 			System.out.println("file "+ filename+" exits ");
 		}
 		catch(FileNotFoundException ex){
@@ -17,3 +17,4 @@ public class FileNotFoundExceptionDemo {
 	}
 
 }
+
